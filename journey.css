@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Common Styles */
+.secondary-color{
+    color: #FF5400;
+}
+.button{
+    background-color: #FF5400;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+}
+
+/* Header */
+.navbar {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-icon {
+    font-size: 2.5em;
+    cursor: pointer;
+    display: none;
+}
+.logo {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 20%;
+    height: 20%;
+    padding: 0 1rem;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+.nav-list li {
+    margin: 0 15px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+.nav-list li:first-child a{
+    color: #FF5400;
+}
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger Icon Styling */
+#menu-toggle:checked + .navbar .menu-icon::before {
+    content: '\2715'; 
+}
+
+/* Banner Section */
+.banner{
+    width: 100%;
+    height: 478px;
+    border-radius: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('assets/Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    text-align: center;
+    color: white;
+}
+.banner h1{
+    font-size: 64px;
+    font-weight: 800;
+    margin: 0;  
+}
+.banner p{
+    font-size: 16px;
+    margin: 20px 0;  
+}
+.banner-contents{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.journey-selection{
+    background-color: rgba(207, 207, 207, 0.3);
+    padding: 1rem;
+    border-radius: 0.8rem ;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px; 
+}
+#where, #when, #select-type, #search{
+    padding: 15px;
+    border-radius: 0.3rem;
+    border: none;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px; 
+}
+#where{
+    width: 174px;
+    height: 22px;
+    
+}
+#when{
+    margin: 2px 0.8rem;
+
+}
+#select-type{
+    margin: 2px 0.8rem;
+}
+.search-btn{
+    background-color: #FF5400;
+    padding: 16px;
+    border: none;
+    border-radius: 0.2rem;
+    color: white;
+}
+
+
+
+/* Responsiveness For Mobile Devices */
+
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 355px;
+        margin: 0 auto;
+        
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .navbar .nav-list {
+        display: flex;
+    }
+
+    /* banner */
+    
+    .banner{
+        border-radius: 1rem;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('assets/Images/Group\ 13\ \(1\)\ \(1\).png');
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+    .banner h1{
+        font-size: 22px;
+        font-weight: 800;
+        margin: 0;  
+    }
+    .banner p{
+        font-size: 14px;
+        margin: 20px 0;  
+    }
+    
+    .banner-contents{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        width: 310px;
+        
+    }
+    #when, #select-type{
+        border-radius: 0.3rem;
+        margin: 0.5rem;
+        width: 255px;
+    }
+    #where{
+        margin: 0.5rem;
+        width: 225px;
+        height: 22px;
+    }
+    .search-btn{
+        margin: 0.5rem;
+        width: 250px;
+    }
+
+    
+
+
+}
