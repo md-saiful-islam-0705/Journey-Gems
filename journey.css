@@ -609,3 +609,78 @@ footer{
        margin: 0 auto;
     }
 }
+@media screen and (min-width: 600px) and (max-width: 992px){
+    
+    .popular-tours, .newsletter{
+        flex-direction: column;
+    }
+    .row-1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+        margin: 20px ;
+    }
+    .row-2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+        margin: 20px ;
+    }
+    .row-3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+        margin: 20px ;
+    
+    }
+    .row-1, .row-2, .row-3{
+        position: relative;
+    }
+    .text-1{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-2{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-3{
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-4{
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-5{
+        position: absolute;
+        top: 83%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+    .text-6{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-7{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .rental-car{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+    }
+    
+}
