@@ -17,8 +17,15 @@ body {
     border-radius: 0.2rem;
     color: white;
 }
-
+.common-h1{
+    font-size: 40px;
+}
+.common-p{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+}
 /* Header */
+
 .navbar {
     padding: 0.5rem 0;
     display: flex;
@@ -252,6 +259,13 @@ body {
     text-align: center;
     margin: 40px 0;
 }
+.features-description h1{
+    font-size: 40px;
+}
+.features-description p{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+}
 .features-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -267,6 +281,7 @@ body {
 }
 .features-content>div i{
     font-size: 30px; 
+
 }
 .feature-1{
     background: linear-gradient(to bottom, #fbee90, #ededed);
@@ -284,7 +299,52 @@ body {
     justify-content: center;
     margin: 0 auto;
 }
+/* Car Rentals */
+.rental-car-description{
+    display: flex;
+    text-align: center;
+    margin: 20px 0;
+    
+}
+.rental-support{
+    margin: 0 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #dddddd;
+    padding: 10px;
+    border-radius: 0.4rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); 
+    
+}
+.rental-support h3{
+    margin: 0 0 0 10px;
+}
+.rental-support h3{
+    margin: 0 0 0 10px;
+}
+.rental-support i{
+    font-size: 20px;
+    color: #FF5400;
+}
 
+.rental-car{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   
+}
+.rental-car>div{
+    background-color: #eaeaea;
+    border-radius: 1rem;
+    padding: 0 20px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.rental-car>div img{
+    width: 300px;
+}
 /* Responsiveness For Mobile Devices */
 
 @media only screen and (max-width: 600px) {
@@ -443,6 +503,16 @@ body {
     .feature-3{
         grid-column: span 1;  
     }
-    
+    .rental-car-description{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .rental-support{
+        width: 335px;
+    }
+    .rental-car{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 
 }
