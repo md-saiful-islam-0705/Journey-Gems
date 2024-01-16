@@ -86,6 +86,7 @@ body {
     background-position: center center;
     text-align: center;
     color: white;
+    background-size: cover;
 }
 .banner h1{
     font-size: 64px;
@@ -583,6 +584,7 @@ footer{
     }
     .rental-support{
         width: 335px;
+        justify-content: start;
     }
     .rental-car{
         grid-template-columns: repeat(1, 1fr);
