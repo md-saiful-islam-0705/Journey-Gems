@@ -96,8 +96,8 @@ body {
     transform: translate(-50%, -50%); 
 }
 .journey-selection{
-    background-color: rgba(207, 207, 207, 0.3);
-    padding: 1rem;
+    background-color: rgba(151, 151, 151, 0.3);
+    padding: 1rem 0;
     border-radius: 0.8rem ;
     color: rgba(19, 19, 24, 0.50);
     font-size: 16px; 
@@ -128,6 +128,127 @@ body {
     border-radius: 0.2rem;
     color: white;
 }
+
+/* Popular Tours */
+.popular-tours{
+    display: flex;
+    margin: 40px 0;
+}
+.popular-tours p{
+    margin: 30px 0 30px 0;
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.popular-tours h1{
+    font-size: 40px ;
+    margin: 0;
+}
+.popular-tours li{
+    margin: 20px 10px;
+    word-spacing: o.7cap;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    line-height: 26px;
+}
+.popular-tours img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Destination */
+
+
+.destination{
+    text-align: center;
+    
+}
+.destination h1{
+    font-size: 40px ;
+}
+.destination p{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+}
+
+/* Countries */
+.destination-countries img{
+    width: 100%;
+    height: 300px;
+
+}
+.row-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    margin: 20px 0;
+}
+.row-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin: 20px 0;
+}
+.row-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    margin: 20px 0;
+
+}
+
+.row-1, .row-2, .row-3{
+    color: rgb(254, 254, 254);
+    position: relative;
+}
+.text-1{
+    position: absolute;
+    top: 42%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.text-2{
+    position: absolute;
+    top: 42%;
+    right: 15%;
+    transform: translate(-50%, -50%);
+}
+.text-3{
+    position: absolute;
+    top: 42%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+.text-4{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-5{
+    position: absolute;
+    top: 42%;
+    right: 7%;
+    transform: translate(-50%, -50%);
+}
+.text-6{
+    position: absolute;
+    top: 42%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.text-7{
+    position: absolute;
+    top: 42%;
+    right: 12%;
+    transform: translate(-50%, -50%);
+}
+
+/* Features */
+
 
 
 
@@ -206,8 +327,79 @@ body {
         margin: 0.5rem;
         width: 250px;
     }
-
+    .popular-tours{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+    .popular-tours img{
+        margin: 20px 0;
+    }
     
+    .row-1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+        margin: 20px 0;
+    }
+    .row-2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+        margin: 20px 0;
+    }
+    .row-3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px;
+        margin: 20px 0;
+    
+    }
+    .row-1, .row-2, .row-3{
+        position: relative;
+    }
+    .text-1{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-2{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-3{
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-4{
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-5{
+        position: absolute;
+        top: 83%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+    .text-6{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-7{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
 
 }
